@@ -264,12 +264,12 @@ public final class Preference {
         /**
          * Default blog title.
          */
-        public static final String DEFAULT_BLOG_TITLE = "Solo 示例";
+        public static final String DEFAULT_BLOG_TITLE = "XtestW的博客";
 
         /**
          * Default blog subtitle.
          */
-        public static final String DEFAULT_BLOG_SUBTITLE = "Java 开源博客";
+        public static final String DEFAULT_BLOG_SUBTITLE = "ACM 铜牌狗";
 
         /**
          * Default skin directory name.
@@ -296,7 +296,7 @@ public final class Preference {
         /**
          * Default notice board.
          */
-        public static final String DEFAULT_NOTICE_BOARD = "Open Source, Open Mind, <br/>Open Sight, Open Future!";
+        public static final String DEFAULT_NOTICE_BOARD = "Thinking, <br/>Coding!";
 
         /**
          * Default meta keywords..

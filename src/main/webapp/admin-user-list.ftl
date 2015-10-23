@@ -43,14 +43,6 @@
             </td>
         </tr>
         <tr>
-            <th>
-                <label for="userAvatar">${userAvatar1Label}</label>
-            </th>
-            <td>
-                <input id="userAvatar" type="text"/>
-            </td>
-        </tr>
-        <tr>
             <td colspan="2" align="right">
                 <button onclick="admin.userList.add();">${saveLabel}</button>
             </td>
@@ -97,14 +89,6 @@
                 </th>
                 <td>
                     <input id="userPasswordUpdate" type="password"/>
-                </td>
-            </tr>
-            <tr>
-                <th>
-                    <label for="userAvatarUpdate">${userAvatar1Label}</label>
-                </th>
-                <td>
-                    <input id="userAvatarUpdate" type="text"/>
                 </td>
             </tr>
             <tr>

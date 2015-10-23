@@ -18,7 +18,7 @@
  *
  * @author <a href="http://vanessa.b3log.org">Liyuan Li</a>
  * @author <a href="http://88250.b3log.org">Liang Ding</a>
- * @version 1.1.1.7, Oct 17, 2015
+ * @version 1.0.1.7, May 28, 2013
  */
 
 /* user-list 相关操作 */
@@ -59,7 +59,7 @@ admin.userList = {
 
         $("#userUpdate").dialog({
             width: 700,
-            height: 250,
+            height: 230,
             "modal": true,
             "hideFooter": true
         });
@@ -136,8 +136,7 @@ admin.userList = {
                 "userName": $("#userName").val(),
                 "userEmail": $("#userEmail").val(),
                 "userURL": $("#userURL").val(),
-                "userPassword": $("#userPassword").val(),
-                "userAvatar": $("#userAvatar").val()
+                "userPassword": $("#userPassword").val()
             };
 
             $.ajax({
@@ -156,7 +155,6 @@ admin.userList = {
                     $("#userEmail").val("");
                     $("#userURL").val("");
                     $("#userPassword").val("");
-                    $("#userAvatar").val("");
                     if (admin.userList.pageInfo.currentCount === Label.PAGE_SIZE &&
                             admin.userList.pageInfo.currentPage === admin.userList.pageInfo.pageCount) {
                         admin.userList.pageInfo.pageCount++;
@@ -207,7 +205,6 @@ admin.userList = {
                 
                 $("#userURLUpdate").val(result.user.userURL);
                 $("#userPasswordUpdate").val(result.user.userPassword);
-                $("#userAvatarUpdate").val(result.user.userAvatar);
 
                 $("#loadMsg").text("");
             }
@@ -228,8 +225,7 @@ admin.userList = {
                 "userEmail": $("#userEmailUpdate").val(),
                 "userURL": $("#userURLUpdate").val(),
                 "userRole": userInfo.userRole,
-                "userPassword": $("#userPasswordUpdate").val(),
-                "userAvatar": $("#userAvatarUpdate").val()
+                "userPassword": $("#userPasswordUpdate").val()
             };
 
             $.ajax({

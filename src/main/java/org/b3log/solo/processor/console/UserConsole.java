@@ -44,7 +44,7 @@ import org.json.JSONObject;
  *
  * @author <a href="http://88250.b3log.org">Liang Ding</a>
  * @author <a href="mailto:385321165@qq.com">DASHU</a>
- * @version 1.1.0.4, Oct 17, 2015
+ * @version 1.0.0.4, Apr 2, 2013
  * @since 0.4.0
  */
 @RequestProcessor
@@ -95,7 +95,6 @@ public class UserConsole {
      *     "userPassword": "", // Unhashed
      *     "userRole": "", // optional
      *     "userURL": "", // optional
-     *     "userAvatar": "" // optional
      * }
      * </pre>
      * @param context the specified http request context
@@ -156,8 +155,7 @@ public class UserConsole {
      *     "userEmail": "",
      *     "userPassword": "",
      *     "userURL": "", // optional, uses 'servePath' instead if not specified 
-     *     "userRole": "", // optional, uses {@value org.b3log.latke.model.Role#DEFAULT_ROLE} instead if not specified
-     *     "userAvatar": "" // optional
+     *     "userRole": "" // optional, uses {@value org.b3log.latke.model.Role#DEFAULT_ROLE} instead if not speciffied
      * }
      * </pre>
      * @param response the specified http servlet response
@@ -329,8 +327,7 @@ public class UserConsole {
      *         "oId": "",
      *         "userName": "",
      *         "userEmail": "",
-     *         "userPassword": "",
-     *         "userAvatar": ""
+     *         "userPassword": ""
      *     }
      * }
      * </pre>
